@@ -13,7 +13,7 @@ Inside students routes file, create routes to
   - pass array of students to template as second argument like
 
   ```js
-  res.render("students", { list: ["ankit", "suraj", "prashant", "ravi"] });
+  res.render('students', { list: ['ankit', 'suraj', 'prashant', 'ravi'] });
   ```
 
   - display list using <% list.forEach(l => {}) %>
@@ -22,7 +22,7 @@ Inside students routes file, create routes to
   - render an ejs template
   - pass a student object to template for displaying student data
   ```js
-  res.render("studentDetail", {
-    student: { name: "rahul", email: "rahul@altcampus.io" },
+  res.render('studentDetail', {
+    student: { name: 'rahul', email: 'rahul@altcampus.io' },
   });
   ```
