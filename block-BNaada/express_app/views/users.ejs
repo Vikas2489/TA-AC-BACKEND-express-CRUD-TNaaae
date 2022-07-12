@@ -12,25 +12,11 @@
 <body>
     <h1>All Users Are Given Below :-</h1>
     <hr>
-    <% users.forEach(user=>{ %>
-        <section>
-            <h2>
-                <%= user.name%>
-            </h2>
-            <h3>
-                <%= user.age%>
-            </h3>
-            <p>
-                <%= user.email%>
-            </p>
-            <h4>
-                <%= user.profession %>
-            </h4>
-            <h5>
-                <%= user._id %>
-            </h5>
-            <hr>
-        </section>
+
+    <% users.forEach(user=>{%>
+        <a href="/users/<%= user._id%>">
+            <%=user.name%>
+        </a>
         <%})%>
 </body>
 
