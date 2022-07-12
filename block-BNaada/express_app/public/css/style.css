@@ -1,0 +1,13 @@
+form {
+    margin: 0 auto;
+}
+
+input {
+    display: block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+h1 {
+    text-align: center;
+}
