@@ -1,0 +1,11 @@
+input {
+    display: block;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+a {
+    background-color: rgb(228, 209, 209);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
