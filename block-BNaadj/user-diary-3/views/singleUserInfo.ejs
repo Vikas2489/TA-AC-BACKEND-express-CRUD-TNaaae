@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Info about only single user</title>
+</head>
+
+<body>
+    <h1>User Details</h1>
+    <h2>
+        <%= user.name%>
+    </h2>
+    <p>
+        <%= user.age%>
+    </p>
+    <p>
+        <%= user.email%>
+    </p>
+    <h2>
+        <%= user.address%>
+    </h2>
+    <h3>
+        <%= user.bio%>
+    </h3>
+    <ul>
+        <%user.hobbies.forEach((hobby)=>{%>
+            <li>
+                <%= hobby%>
+            </li>
+            <% })%>
+    </ul>
+    <a href="/users/<%= user.id%>/edit">Update User</a>
+    <a href="/users/<%= user.id%>/delete">Delete User</a>
+    <a href="/users">Go To The Lists Of User</a>
+</body>
+
+</html>
