@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>User Form</title>
+</head>
+
+<body>
+    <form action="/users/<%= user.id %>" method="post">
+        <input type="text" value="<%=user.name %>" name="name" placeholder="add name">
+        <input type="number" value="<%=user.age %>" name="age" placeholder="add age">
+        <input type="email" value="<%=user.email %>" name="email" placeholder="add email">
+        <input type="text" value="<%=user.profession %>" name="profession" placeholder="add profession">
+        <input type="submit">
+    </form>
+</body>
+
+</html>
