@@ -2,6 +2,10 @@ let express = require("express");
 const User = require("../models/user");
 let router = express.Router();
 
+router.get("/new", (req, res) => {
+    res.render("userForm");
+});
+
 router.post("/", (req, res, next) => {
     console.log(req.body);
     User.create(req.body, (err, createdUser) => {
@@ -36,9 +40,8 @@ router.get("/:id", (req, res, next) => {
     })
 })
 
-router.get("/new", (req, res) => {
-    res.render("userForm");
-});
+
+
 
 
 router.get("/:id/edit", (req, res, next) => {
